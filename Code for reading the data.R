@@ -19,7 +19,7 @@ Power <- read.table("household_power_consumption.txt", header = TRUE, sep = ";")
 head(Power, 4)
 
 ## Modify the parameters of the data and Display its internal structure
-Power2 <- read.table("household_power_consumption.txt", header=TRUE, sep=";", colClasses =c('character','character','numeric','numeric','numeric','numeric','numeric','numeric','numeric'), na.strings = "?")
+Power2 <- read.table("household_power_consumption.txt", header=TRUE, sep=";", colClasses =c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"), na.strings = "?")
 str(Power2)
 
 
@@ -46,4 +46,12 @@ Powerfinal <- mutate(Powerfinal, Day)
 str(Powerfinal)
 head(Powerfinal)
 tail(Powerfinal)
+
+
+## Add Date and Time Variables, assign them as Date_Time, add and format the new variable (Date_Time) to the dataset Powerfinal
+Date_Time <- paste(Powerfinal$Date, Powerfinal$Time)
+head(Date_Time)
+Powerfinal <- mutate(Powerfinal, Date_Time)
+Powerfinal$Date_Time <- as.POSIXct(Date_Time)
+
 
