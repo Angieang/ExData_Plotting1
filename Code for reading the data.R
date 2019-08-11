@@ -46,3 +46,4 @@ Powerfinal <- mutate(Powerfinal, Day)
 str(Powerfinal)
 head(Powerfinal)
 tail(Powerfinal)
+
