@@ -41,5 +41,3 @@ Date_Time <- paste(Powerfinal$Date, Powerfinal$Time)
 head(Date_Time)
 Powerfinal <- mutate(Powerfinal, Date_Time)
 Powerfinal$Date_Time <- as.POSIXct(Date_Time)
-
-
