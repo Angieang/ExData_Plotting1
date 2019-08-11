@@ -36,18 +36,6 @@ tail(Powerfinal)
 
 ##Install dplyr package
 
-## Crate the Day variable (includes the abbreviated weekday corresponding to each Date of my dataset Powerfinal)
-Day <- format(Powerfinal$Date, "%a")
-
-## Add the variable Day to my dataset Powerfinal
-Powerfinal <- mutate(Powerfinal, Day)
-
-##Brief check of the results
-str(Powerfinal)
-head(Powerfinal)
-tail(Powerfinal)
-
-
 ## Add Date and Time Variables, assign them as Date_Time, add and format the new variable (Date_Time) to the dataset Powerfinal
 Date_Time <- paste(Powerfinal$Date, Powerfinal$Time)
 head(Date_Time)
