@@ -14,11 +14,3 @@ dev.copy(png, file="plot3.png", width=480, height = 480)
 
 ##Close the png device
 dev.off()
-
-
-
-
-
-> Part1<-plot(Powerfinal$Sub_metering_1~Powerfinal$Date_Time, type="l", ylab="Global Active Power (kilowatts)", xlab="", col="black")
-> Part2<-plot(Powerfinal$Sub_metering_2~Powerfinal$Date_Time, type="l", ylab="Global Active Power (kilowatts)", xlab="", col="red")
-> Part3<-plot(Powerfinal$Sub_metering_3~Powerfinal$Date_Time, type="l", ylab="Global Active Power (kilowatts)", xlab="", col="blue")
