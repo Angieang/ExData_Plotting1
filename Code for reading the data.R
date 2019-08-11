@@ -32,3 +32,17 @@ Powerfinal<-subset(Power2, Date>="2007-02-01" & Date<="2007-02-02")
 ##Verify my subset (having all and only data from the dates 2007-02-01 and 2007-02-02.)
 head(Powerfinal)
 tail(Powerfinal)
+
+
+##Install dplyr package
+
+## Crate the Day variable (includes the unabbreviated weekday corresponding to each Date of my dataset Powerfinal)
+Day <- format(Powerfinal$Date, "%A")
+
+## Add the variable Day to my dataset Powerfinal
+Powerfinal <- mutate(Powerfinal, Day)
+
+##Brief check of the results
+str(Powerfinal)
+head(Powerfinal)
+tail(Powerfinal)
