@@ -23,4 +23,3 @@ dev.copy(png, file="plot4.png", width=480, height = 480)
 
 ##Close the png device
 dev.off()
-
