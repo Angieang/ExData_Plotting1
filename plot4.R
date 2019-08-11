@@ -5,7 +5,7 @@ par(mfrow=c(2,2))
 plot(Powerfinal$Global_active_power~Powerfinal$Date_Time, type="l", ylab="Global Active Power", xlab="",cex.axis=0.8)
 
 ##add the 2nd part of the plot
-plot(Powerfinal$Voltage~Powerfinal$Date_Time, type="l", ylab="Voltage", xlab="datetime", cex.axis=0.8)
+plot(Powerfinal$Voltage~Powerfinal$Date_Time, type="l", ylab="Voltage", xlab="datetime", cex.axis=0.9)
 
 ##add the 3rd part of the plot
 plot(Powerfinal$Sub_metering_1~Powerfinal$Date_Time, type="l", ylab="Energy sub metering", xlab="", col="black" , cex.axis=0.8)
