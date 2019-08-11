@@ -36,8 +36,8 @@ tail(Powerfinal)
 
 ##Install dplyr package
 
-## Crate the Day variable (includes the unabbreviated weekday corresponding to each Date of my dataset Powerfinal)
-Day <- format(Powerfinal$Date, "%A")
+## Crate the Day variable (includes the abbreviated weekday corresponding to each Date of my dataset Powerfinal)
+Day <- format(Powerfinal$Date, "%a")
 
 ## Add the variable Day to my dataset Powerfinal
 Powerfinal <- mutate(Powerfinal, Day)
