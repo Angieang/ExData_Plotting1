@@ -5,7 +5,7 @@ plot(Powerfinal$Sub_metering_1~Powerfinal$Date_Time, type="l", ylab="Energy sub 
 points(Powerfinal$Sub_metering_2~Powerfinal$Date_Time, type="l", col="red")
 points(Powerfinal$Sub_metering_3~Powerfinal$Date_Time, type="l", col="blue")
 
-legend("topright", lty=1, lwd = 1, col=c("black", "red", "blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", lty=1, lwd = 1, col=c("black", "red", "blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), cex=0.7)
 
 
 ##Copy the plot as a png file named plot3.png, with a width of 480 pixels and a height of 480 pixels
