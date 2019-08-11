@@ -1,3 +1,5 @@
+##The code for reading the data and preparing the dataset in order to produce all the requested plots later.
+
 ##Verify my working directory. Create the file on my working directory. Download and unzip the data file.
 getwd()
 if(!file.exists(".data")){dir.create("./data")}
