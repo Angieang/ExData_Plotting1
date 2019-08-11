@@ -1,6 +1,5 @@
 ##Creating the 3rd plot (Already installed datasets package)
 
-
 plot(Powerfinal$Sub_metering_1~Powerfinal$Date_Time, type="l", ylab="Energy sub metering", xlab="", col="black")
 points(Powerfinal$Sub_metering_2~Powerfinal$Date_Time, type="l", col="red")
 points(Powerfinal$Sub_metering_3~Powerfinal$Date_Time, type="l", col="blue")
