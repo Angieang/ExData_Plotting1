@@ -2,7 +2,7 @@
 
 ##Verify my working directory. Create the file on my working directory. Download and unzip the data file.
 getwd()
-if(!file.exists(".data")){dir.create("./data")}
+if(!file.exists("./data")){dir.create("./data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 download.file(fileUrl, destfile = "./data/Data.zip", method = "curl")
 unzip(zipfile = "./data/Data.zip", exdir = "./data")
